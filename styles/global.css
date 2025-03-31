@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --font-family:"Roboto", sans-serif;
+  --font-family-flex: "Roboto Flex", sans-serif;
+  --back-color:rgb(7, 122, 253);
+  --title: 400 4.5rem/120% var(--font-family-flex);
+  --legend: 600 1rem/100% var(--font-family);
+  
+}
+
+body {
+  
+}
+
+header {
+  display: flex;
+  margin-top: 1rem;
+  align-items: center;
+  
+  justify-content: space-between;
+  & input {
+    border-radius: .3rem;
+    width: 30rem;
+    height: 2.375rem;
+    border: 1px solid rgb(212, 211, 211);
+    margin-left: 4rem;
+  }
+
+  & .person {
+    margin-left: 4rem;
+  }
+  
+}
+
+.supersale {
+  background-color: rgb(230, 227, 227);
+  color: var(--back-color);
+  text-transform: uppercase;
+  gap: 12px;
+
+  & h1 {
+    color: black;
+    font:var(--title) 
+  }
+
+  & h2 {
+    letter-spacing: 2px;
+  }
+
+  & p {
+    letter-spacing: 4px;
+    font: var(--legend);
+    height: 34px;
+  }
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: var(--font-family-flex);
+}
+
+
+.flex-1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--back-color);
+  color: antiquewhite;
+  height: 28px;
+  
+  gap: 1rem;
+  
+
+  & .violet {
+    background-color: blueviolet;
+  }
+}
