@@ -1,0 +1,62 @@
+.m-top {
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+  gap: 3rem;
+}
+
+.supersale {
+  background-color: rgb(230, 227, 227);
+  color: var(--back-color);
+  text-transform: uppercase;
+  gap: 12px;
+
+  & h1 {
+    color: black;
+    font:var(--title) 
+  }
+  & h2 {
+    letter-spacing: 2px;
+  }
+  & p {
+    letter-spacing: 4px;
+    font: var(--legend);
+    height: 34px;
+  }
+}
+
+.info {
+  display: grid;
+  width: 60rem;
+  
+  grid-template-columns: 60% 40%;
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center;
+  font: var(--p);
+  font-size: 1.1rem;
+  text-align: justify;
+  color: rgb(59, 59, 59);
+  margin-top: 5rem;
+  margin-left: 25rem;
+  gap: 3rem ;
+ 
+  margin-bottom: 1rem;
+  & .cup {
+    width: 100%;
+    height: 40rem;
+    background: #C2C2C2;
+    display: flex; /* Adicionado para usar Flexbox */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+  }
+
+  & h2 {
+    font: var(--h2);
+    margin-bottom: 1rem;
+    color: black;
+  }
+
+  & img {
+    width: 30rem;
+    height: 31rem;
+  }
+}

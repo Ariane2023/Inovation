@@ -1,28 +1,36 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
+  <head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Avanti</title>
+  <title>Innovation Class</title>
+  <link rel="stylesheet" href="./styles/index.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
   <div>
-    <legend>Ganhe <span>R$10,00</span> de desconto no seu primeiro pedido. Utilize um cupom <span>DESCONTO10</span></legend>
-    <header>
+    <div class="flex-1">
+      <legend>Ganhe <span class="violet">R$10,00</span> de desconto no seu primeiro pedido. Utilize um cupom <span>DESCONTO10</span></legend>
+    </div>
+    <header class="flex">
       <img src="./assets/Grupo 21089.png">
-      <p>Digite aqui o que você procura</p>
-      <input id="serch" type="text">
-      <div>
-        <img src="./assets/person.png" alt="">
-        <p>Olá, Nome cliente</p>
-        <button>
-          <img src="./assets/center_Car.png" alt="">
-        </button>
+      <input id="serch" type="text" placeholder="Digite o que você procura" >
+            
+      <div class=" person flex">
+        <img src="./assets/person.png" alt="">        
+        <p>Olá, <br>Nome cliente</p>  
+        <img src="./assets/center_Car.png" alt=""> 
+        <div class="radio-inner"></div> <!--Colocar a bolinha com 2pelo css ou js-->     
       </div>
     </header>
-    <div>
-      <strong>Todas as categorias</strong>
-      <ul>
+
+    <div class="m-top flex">
+      <strong> <img src="./assets/Três linhas.png">
+        Todas as categorias</strong>
+      <ul class="m-top flex">
         <li>Departamento</li>
         <li>Departamento</li>
         <li>Departamento</li>
@@ -33,96 +41,150 @@
         <li>Departamento</li>
       </ul>
     </div>
-    <div class="supersale">
+    <div class="supersale flex">
       <img src="./assets/Supersale.png">
-      <h1>SUPERSALE</h1>
-      <p>itens selecionados com até</p>
-      <h2>50%OFF</h2>
-    </div>
-    <div class="releases">
-      <img src="./assets/aron left.png">
+      <div class="column">
+        <h1><strong>SUPER</strong>SALE</h1>
+        <p>itens selecionados com até</p>
+        <h2>50%OFF</h2>
+      </div>
       
-      <div class="offers">
-        <p>NOVO</p>
-        <img src="./assets/Ofertas_1.JPG">
-        <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit</h3>
-        <div>
-          <div class="price">
-            <small>R$100,00</small>
-            <h3>R$79,90</h3>
-          </div>
-          <span class="discount">10% OFF</span>
-          <small>Ou até  <strong>10x de R$ 7,90</strong></small>
-          <button>Comprar</button>
-        </div>          
-      </div>
-      <div class="offers">
-        <p>NOVO</p>
-        <img src="./assets/Ofertas_1.JPG">
-        <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit</h3>
-        <div>
-          <div class="price">
-            <small>R$100,00</small>
-            <h3>R$79,90</h3>
-          </div>
-          <span class="discount">10% OFF</span>
-          <small>Ou até  <strong>10x de R$ 7,90</strong></small>
-          <button>Comprar</button>
-        </div>          
-      </div>
-      <div class="offers">
-        <p>NOVO</p>
-        <img src="./assets/Ofertas_1.JPG">
-        <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit</h3>
-        <div>
-          <div class="price">
-            <small>R$100,00</small>
-            <h3>R$79,90</h3>
-          </div>
-          <span class="discount">10% OFF</span>
-          <small>Ou até  <strong>10x de R$ 7,90</strong></small>
-          <button>Comprar</button>
-        </div>          
-      </div>
-      <div class="offers">
-        <p>NOVO</p>
-        <img src="./assets/Ofertas_1.JPG">
-        <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit</h3>
-        <div>
-          <div class="price">
-            <small>R$100,00</small>
-            <h3>R$79,90</h3>
-          </div>
-          <span class="discount">10% OFF</span>
-          <small>Ou até  <strong>10x de R$ 7,90</strong></small>
-          <button>Comprar</button>
-        </div>          
-      </div>
-      <div class="offers">
-        <p>NOVO</p>
-        <img src="./assets/Ofertas_1.JPG">
-        <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit</h3>
-        <div>
-          <div class="price">
-            <small>R$100,00</small>
-            <h3>R$79,90</h3>
-          </div>
-          <span class="discount">10% OFF</span>
-          <small>Ou até  <strong>10x de R$ 7,90</strong></small>
-          <button>Comprar</button>
-        </div>          
-      </div>     
     </div>
+
+    <section>
+      <div>
+        <header class="inside">
+          <h3>lançamentos</h3>
+          <a href="#" class="">
+            <strong>Ver mais</strong>
+          </a>
+        </header>
+      </div>
+      <div class="releases flex">
+        <img src="./assets/arrow left.png">
+        <div class="offers">
+          <p>NOVO</p>
+          <img src="./assets/t-shirt.png">
+          <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit</h3>
+          <div id="price">
+            <div class="price">
+              <div>
+                <small>R$100,00</small>
+                <h4><strong>R$79,90</strong></h4>
+              </div>
+              <div class="dez">
+                <a href="#" >
+                  <strong>10% OFF</strong>
+                </a> 
+              </div>         
+            </div>
+            <small>Ou até  <strong>10x de R$ 7,90</strong></small>
+            <button>Comprar</button>  
+          </div>   
+               
+        </div>
+        <div class="offers">
+          <p>NOVO</p>
+          <img src="./assets/t-shirt.png">
+          <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit</h3>
+          <div id="price">
+            <div class="price">
+              <div>
+                <small>R$100,00</small>
+                <h4><strong>R$79,90</strong></h4>
+              </div>
+              <div class="dez">
+                <a href="#" >
+                  <strong>10% OFF</strong>
+                </a> 
+              </div>         
+            </div>
+            <small>Ou até  <strong>10x de R$ 7,90</strong></small>
+            <button>Comprar</button> 
+          </div>   
+                
+        </div>
+        <div class="offers">
+          <p>NOVO</p>
+          <img src="./assets/t-shirt.png">
+          <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit</h3>
+          <div id="price">
+            <div class="price">
+              <div>
+                <small>R$100,00</small>
+                <h4><strong>R$79,90</strong></h4>
+              </div>
+              <div class="dez">
+                <a href="#" >
+                  <strong>10% OFF</strong>
+                </a> 
+              </div>         
+            </div>
+            <small>Ou até  <strong>10x de R$ 7,90</strong></small>
+            <button>Comprar</button> 
+          </div>   
+                
+        </div>
+        <div class="offers">
+          <p>NOVO</p>
+          <img src="./assets/t-shirt.png">
+          <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit</h3>
+          <div id="price">
+            <div class="price">
+              <div>
+                <small>R$100,00</small>
+                <h4><strong>R$79,90</strong></h4>
+              </div>
+              <div class="dez">
+                <a href="#" >
+                  <strong>10% OFF</strong>
+                </a> 
+              </div>         
+            </div>
+            <small>Ou até  <strong>10x de R$ 7,90</strong></small>
+            <button>Comprar</button> 
+          </div>   
+                
+        </div>
+        <div class="offers">
+          <p>NOVO</p>
+          <img src="./assets/t-shirt.png">
+          <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit</h3>
+          <div id="price">
+            <div class="price">
+              <div>
+                <small>R$100,00</small>
+                <h4><strong>R$79,90</strong></h4>
+              </div>
+              <div class="dez">
+                <a href="#" >
+                  <strong>10% OFF</strong>
+                </a> 
+              </div>         
+            </div>
+            <small>Ou até  <strong>10x de R$ 7,90</strong></small>
+            <button>Comprar</button> 
+          </div>   
+                
+        </div> 
+        <img src="./assets/arrow right.png" alt="imagem de uma seta">   
+      </div>
+    </section>
+    
+
 
     <div class="info">
       <div class="cup">
         <img src="./assets/cup.png">
       </div>
-      <h2>LOREM IPSUM</h2>
+      <div class="info-2 flex-col">
+        <h2>LOREM IPSUM</h2>
       <p>Duis consectetur metus nec lacus auctor dignissim. Mauris vitae finibus dui. Mauris laoreet lacus ut eleifend viverra. Cras efficitur volutpat dui, in lobortis metus lacinia sit amet. Sed lacinia pharetra magna, vel pulvinar ligula hendrerit a. Maecenas fringilla porttitor tortor eget lacinia. Donec sollicitudin euismod orci, auctor fringilla magna consequat interdum. Fusce sagittis elit a libero commodo egestas efficitur id augue.<br>
       <br>
       Duis consectetur metus nec lacus auctor dignissim. Mauris vitae finibus dui. Mauris laoreet lacus ut eleifend viverra. Cras efficitur volutpat dui, in lobortis metus lacinia sit amet. Sed lacinia pharetra magna, vel pulvinar ligula hendrerit a. Maecenas fringilla porttitor tortor eget lacinia. Donec sollicitudin euismod orci, auctor fringilla magna consequat interdum. Fusce sagittis elit a libero commodo egestas efficitur id augue.                  
       </p>
+      </div>
+      
     </div>
     <fieldset>
       <h2>LOREM IPSUM</h2>

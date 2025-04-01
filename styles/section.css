@@ -1,0 +1,92 @@
+.inside {
+  margin-top: 7rem;
+  margin-left: 8.5rem;
+  margin-right: 8.5rem;
+  margin-bottom: 2rem;
+  
+
+  & h3 {
+    text-transform: uppercase;
+  }
+}
+.releases {
+  margin-left: 7rem;
+  margin-right: 7rem;
+  padding: 0.5rem;
+}
+
+.offers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 13rem;
+  height: 25rem;
+  gap: 1rem;
+  border: 5px solid var(--border);
+   
+  & h3 {
+    color: rgb(59, 59, 59);
+    font: var(--h3);
+  }
+  & h4 {
+    color: black;
+    font: var(--h4);
+  }
+  & img {
+    width: 10rem;
+    height: 10rem;
+    overflow: hidden;
+  }
+
+  & button {
+    background-color: var(--back-color);
+    width: 13rem;
+    height: 2.375rem;
+    border-radius: 0.5rem;
+    justify-content: center;
+    border: none;
+    color: aliceblue;
+    font: var(--p);
+    margin-top: 1rem;
+    
+  }
+}
+
+#price {
+  display: flex;
+  flex-direction: column;
+  
+  
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  font: var(--legend);
+  
+  
+  & .dez {
+    background-color:rgb(45, 189, 189);
+    width: 4.3rem;
+    height: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    font: var(--small);
+    & strong {
+      color: antiquewhite;
+      text-decoration: underline;
+      font-weight: 0.5rem;
+    }
+    
+  }
+  & small {
+    color: rgb(59, 59, 59);
+    text-decoration-line: line-through;
+  }
+}
+
+

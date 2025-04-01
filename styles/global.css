@@ -7,16 +7,28 @@
 :root {
   --font-family:"Roboto", sans-serif;
   --font-family-flex: "Roboto Flex", sans-serif;
-  --back-color:rgb(7, 122, 253);
+  --back-color:rgb(3, 104, 219);
   --title: 400 4.5rem/120% var(--font-family-flex);
   --legend: 600 1rem/100% var(--font-family);
-  
+  --h2: 500 2rem/150% var(--font-family-flex);
+  --h3: 400 1.rem/100% var(--font-family-flex);
+  --h4: 600 1.3rem/120% var(--font-family);
+  --p: 500 1rem/120% var(--font-family-flex);
+  --small: 400 .7rem/120% var(--font-family-flex)
+
 }
 
 body {
-  
-}
 
+  
+  & ul {
+    list-style: none;
+  }
+
+  & a {
+    text-decoration: none;
+  }
+}
 header {
   display: flex;
   margin-top: 1rem;
@@ -27,37 +39,14 @@ header {
     border-radius: .3rem;
     width: 30rem;
     height: 2.375rem;
-    border: 1px solid rgb(212, 211, 211);
+    border: 1px solid var(--border);
     margin-left: 4rem;
   }
-
   & .person {
     margin-left: 4rem;
   }
-  
 }
 
-.supersale {
-  background-color: rgb(230, 227, 227);
-  color: var(--back-color);
-  text-transform: uppercase;
-  gap: 12px;
-
-  & h1 {
-    color: black;
-    font:var(--title) 
-  }
-
-  & h2 {
-    letter-spacing: 2px;
-  }
-
-  & p {
-    letter-spacing: 4px;
-    font: var(--legend);
-    height: 34px;
-  }
-}
 
 .column {
   display: flex;
@@ -65,8 +54,6 @@ header {
   align-items: center;
   font-family: var(--font-family-flex);
 }
-
-
 .flex-1 {
   display: flex;
   align-items: center;
@@ -77,8 +64,11 @@ header {
   
   gap: 1rem;
   
-
   & .violet {
     background-color: blueviolet;
   }
 }
+
+
+
+
