@@ -1,7 +1,44 @@
 .m-top {
-  margin-top: 2rem;
-  margin-bottom: 1.5rem;
-  gap: 3rem;
+  display: flex;
+  flex-direction: row;
+  justify-self: center;
+  margin-top: 1rem;
+  margin-bottom: 1.125rem;
+  gap: 2.8125rem;
+  font: var(--pp);
+  color: black;  
+}
+.list {
+  display: flex;
+  align-items: center;
+  gap: 2.8125rem;
+
+  & a {
+    color: #000;
+  }
+}
+/* Estilizando o submenu */
+.submenu {
+  display: none;
+  position: absolute;
+  background: white;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  list-style: none;
+  margin-top: 10px;
+}
+
+.submenu li {
+  padding: 5px 0;
+}
+
+/* Mostrando o submenu ao passar o mouse */
+.dropdown {
+  position: relative;
+}
+
+.dropdown:hover .submenu {
+  display: block;
 }
 
 .supersale {
@@ -9,6 +46,9 @@
   color: var(--back-color);
   text-transform: uppercase;
   gap: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   & h1 {
     color: black;
@@ -18,7 +58,7 @@
     letter-spacing: 2px;
   }
   & p {
-    letter-spacing: 4px;
+    letter-spacing: .4rem;
     font: var(--legend);
     height: 34px;
   }
@@ -26,7 +66,8 @@
 
 .info {
   display: grid;
-  width: 60rem;
+  width: 70rem;
+  height: 46.6875rem;
   
   grid-template-columns: 60% 40%;
   justify-content: center; /* Centraliza horizontalmente */
@@ -35,14 +76,15 @@
   font-size: 1.1rem;
   text-align: justify;
   color: rgb(59, 59, 59);
-  margin-top: 5rem;
-  margin-left: 25rem;
-  gap: 3rem ;
+  margin-top: 6rem;
+  margin-left: 2rem;
+  gap: 2.34375rem ;
+  justify-self: center;
  
   margin-bottom: 1rem;
   & .cup {
-    width: 100%;
-    height: 40rem;
+    width: 40.75rem;
+    height: 46.6875rem;
     background: #C2C2C2;
     display: flex; /* Adicionado para usar Flexbox */
     justify-content: center; /* Centraliza horizontalmente */
@@ -56,7 +98,31 @@
   }
 
   & img {
-    width: 30rem;
-    height: 31rem;
+    width: 32.71125rem;
+    height: 33.010625rem;
+  }
+}
+
+.banner {
+  width: 100%;
+  height: 41.25rem;
+  background-image: url(../assets/image.png);
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  
+
+  & .legend {
+    font-family: "Nunito", sans-serif;
+    background-color: var(--back-color);
+    width: 100%;
+    height: 8.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.875rem;
+    
   }
 }

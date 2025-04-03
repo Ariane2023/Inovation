@@ -1,61 +1,92 @@
 .inside {
   margin-top: 7rem;
-  margin-left: 8.5rem;
-  margin-right: 8.5rem;
   margin-bottom: 2rem;
-  
+  width: 73rem;
+  height: 1.6875rem;
+  display: flex;
+  justify-content: space-between;
+  justify-self: center;
+  font-family: "Nunito sans",sans-serif;
+  font-size: 1.25rem;
 
   & h3 {
     text-transform: uppercase;
   }
+  & a {
+    color: var(--gray-color-2);
+    font: var(--font-family-flex);
+  }
 }
 .releases {
-  margin-left: 7rem;
-  margin-right: 7rem;
-  padding: 0.5rem;
-}
-
-.offers {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  width: 13rem;
-  height: 25rem;
-  gap: 1rem;
-  border: 5px solid var(--border);
-   
-  & h3 {
+  align-items: center;
+  margin-left: 19.75rem;
+  margin-right: 19.75rem;
+  width: 80.525rem;
+  
+  & small {
+    font-size: 0.75rem;
+  }
+  & span{
     color: rgb(59, 59, 59);
     font: var(--h3);
+    width: 13.875rem;
+    display: flex;
+    justify-items: center;
+    align-content: center;
+    margin-left: 8px;
+    margin-right: 8px;
   }
   & h4 {
     color: black;
     font: var(--h4);
   }
-  & img {
-    width: 10rem;
-    height: 10rem;
-    overflow: hidden;
-  }
-
   & button {
     background-color: var(--back-color);
-    width: 13rem;
+    width: 13.875rem;
     height: 2.375rem;
     border-radius: 0.5rem;
     justify-content: center;
+    text-align: center;
     border: none;
     color: aliceblue;
     font: var(--p);
     margin-top: 1rem;
-    
+    margin-bottom: 0.5rem;
   }
+}
+
+#offers {
+  border: 1px solid #DDDDDD;
+  border-radius: 10px;
+  color: #DDDDDD;
+  margin-left: 8px;
+  margin-right: 8px;
+  width: 14rem;
+  & p {
+    width: 2.5625rem;
+    height: 1.4375rem;
+    background-color: rgb(51, 51, 114);
+    font: var(--new);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.3rem;
+  }
+
+  & img {
+    width: 13.875rem;
+    height: 13.875rem;
+    overflow: hidden;
+  } 
 }
 
 #price {
   display: flex;
   flex-direction: column;
+  margin-left: 8px;
+  margin-right: 8px;
   
   
 }
@@ -87,6 +118,15 @@
     color: rgb(59, 59, 59);
     text-decoration-line: line-through;
   }
+}
+
+.payment-methods {
+  display: flex;
+  justify-content: center;
+  gap: 2.098125rem;
+  margin-top: 4.1825rem;
+  margin-bottom: 4.1825rem;
+  
 }
 
 
