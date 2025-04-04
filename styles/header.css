@@ -1,0 +1,126 @@
+.avanti {
+  display: flex;
+  
+  margin-top: 1.3rem;
+  margin-bottom: 1.75rem;
+
+
+  & .logo {
+    width: 8rem;
+    margin-left: 2rem;
+  }
+
+  & .input {
+    border-radius: .3rem;
+    width: 37rem;
+    height: 2.375rem;
+    border: 1px solid var(--border);
+    margin-left: 4.0625rem;    
+    padding-left: 1.5rem;
+    overflow: hidden;
+    display: flex;
+    & input {
+      width: 37rem;
+      border: none;  
+         
+    }
+    & button {
+      width: 12rem;
+      height: 2.375rem;
+      border: none;
+      background-color: white;
+      & img {
+        width: 18.698px;
+        height: 18.698px;
+        flex-shrink: 0;
+        overflow: hidden;
+        margin-left: 5rem;
+        
+      }
+    }
+  }
+  & .person {
+    gap: 10px;
+    margin-left: 17rem;
+  }  
+}
+.input input:focus {
+  outline: none;
+}
+.center {
+  position: relative;
+
+  .radio-image {
+    background-image: url(../assets/Elipse.svg);
+    width: 1.3125rem;
+    height: 1.3124375rem;
+    color: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0.5rem;
+    margin-top: -1rem;
+    
+    font-family: "Nunito";
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 700;
+  
+    position: absolute;
+    top: .5rem;
+    left: .5rem;
+  }
+
+}
+
+.menu-categorias {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-categorias__botao {
+  background-color: white;  
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  display: flex; /* Para alinhar o ícone e o texto */
+  align-items: center; /* Alinha verticalmente */
+}
+
+.menu-categorias__botao img {
+  margin-right: 10px; /* Espaço entre o ícone e o texto */
+}
+
+.menu-categorias__lista {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: none;
+  width: 200px; /* Defina a largura desejada */
+}
+
+.menu-categorias__lista li {
+  padding: 10px 20px;
+}
+
+.menu-categorias__lista li a {
+  text-decoration: none;
+  color: #333;
+  display: block; /* Para ocupar a largura total do item */
+}
+
+/* Estilos adicionais para o hover */
+.menu-categorias__lista li a:hover {
+  color: var(--back-color);
+}
+
+.list li a:hover {
+  color: var(--back-color);
+}

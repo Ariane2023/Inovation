@@ -4,16 +4,19 @@
   width: 73rem;
   height: 1.6875rem;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   justify-self: center;
+  align-items: center;
   font-family: "Nunito sans",sans-serif;
   font-size: 1.25rem;
+  color: black;
 
   & h3 {
     text-transform: uppercase;
   }
   & a {
-    color: var(--gray-color-2);
+    color: #303030;
     font: var(--font-family-flex);
   }
 }

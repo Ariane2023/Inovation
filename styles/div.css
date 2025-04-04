@@ -12,33 +12,42 @@
   display: flex;
   align-items: center;
   gap: 2.8125rem;
-
+  list-style: none;
   & a {
     color: #000;
+    & a:hover .submenu{
+      display: block;
+      color: var(--back-color);
+    }
   }
 }
+/* Estilizando os itens do menu */
+.dropdown {
+  position: relative;
+
+}
+
 /* Estilizando o submenu */
 .submenu {
   display: none;
   position: absolute;
+  top: 100%;
+  left: 0;
   background: white;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   padding: 10px;
   list-style: none;
-  margin-top: 10px;
+  min-width: 150px;
+  z-index: 10;
 }
-
 .submenu li {
   padding: 5px 0;
 }
 
-/* Mostrando o submenu ao passar o mouse */
-.dropdown {
-  position: relative;
-}
-
+/* Mostrar o submenu ao passar o mouse */
 .dropdown:hover .submenu {
   display: block;
+  color: var(--back-color);
 }
 
 .supersale {
@@ -56,6 +65,7 @@
   }
   & h2 {
     letter-spacing: 2px;
+    font: var(--title-2);
   }
   & p {
     letter-spacing: .4rem;

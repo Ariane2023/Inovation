@@ -10,7 +10,9 @@
   --back-color:rgb(0, 92, 255);
   --gray-color: #DEDEDE;
   --gray-color-2: #4F4F4F;
+  --border: #DDD;
   --title: 300 6.25rem/100% var(--font-family);
+  --title-2: 700 3.75rem/100% var(--font-family-flex) ;
   --legend: 700 1.5625rem/100% var(--font-family);
   --h2: 500 2rem/150% var(--font-family-flex);
   --h3: 700 0.875rem/100% var(--font-family-flex);
@@ -24,7 +26,8 @@
 }
 
 body {
-  display: grid;
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   overflow-x: hidden ;
@@ -39,28 +42,21 @@ body {
 }
 header {
   display: flex;
-  margin-top: 1rem;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  position: sticky;
-
-  & .logo {
-    width: 8rem;
+  margin-top: 1rem;
+  margin-bottom: 1.125rem;
+  align-items: center;
+  color: #4F4F4F;
+  & p {
+    display: flex;
+    font-weight: bold;
+    font-family: "Nunito";
+    color: black;
   }
 
-  & input {
-    border-radius: .3rem;
-    width: 36.7rem;
-    height: 2.5rem;
-    border: 1px solid var(--border);
-    margin-left: 4.08875rem;
-    padding-left: 1.5rem;
-  }
-  & .person {
-    margin-left: 17.1875rem;
-  }
 }
-
 
 .column {
   display: flex;
