@@ -363,6 +363,7 @@ input:focus {
     flex-direction: row;
     align-self: center;
     justify-items: center;
+    margin-bottom: 1.5rem;
   }
   
   .menu-categorias__botao--desktop {
