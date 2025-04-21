@@ -1,43 +1,83 @@
-fieldset {
-  background-color: rgb(230, 227, 227);
-  display: flex;
-  justify-content: center;
-  color: var(--gray-color);
-  font: var(--font-family-flex);
-  width: 100%;
-  height: 51.1875rem;
-  margin-top: 3.4375rem;
+fieldset{ 
+  border: none;
+  height: 47.8rem;
 }
 .content {
-  width: 70rem;
-  height: 46.6875rem;
+  width: 100%;
+  height: 44.8rem;
+  background-color: var(--gray-color);
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 4.rem;
-  margin-top: 3rem;
-  margin-bottom: 5.99125rem;
-  border: none;
-  & .cup-2 {
-    width: 40.75rem;
-    height: 45.5rem;
-  }
-  & h2 {
-    font: var(--h2);
-    color: var(--gray-color-2);
-  }
-  & ul {
-    font: var(--p);
-    width: 29.375rem;
-    height: 35.4375rem;
+  color: #000000;
+}
+.banner {
+  width: 21rem;
+  height: 21rem;
   
-    & li {
-      height: 7.8125rem;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 1.5rem;
-      color: var(--gray-color-2);
+  display: flex;
+  justify-content: center;
+}
+.lorem {
+  width: 21.8rem;
+  font-family: var(--ff-nunito);
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 140%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  & h2 {
+    font-size: 1.125rem;
+    font-weight: 700;
+    line-height: 140%;
+    letter-spacing: 4%;
+    margin-top: 1.3rem;
+  }
+
+}
+
+li {
+  display: flex;
+  align-items: center;
+  gap: .875rem;
+  margin-top: 1.1rem;
+  & img {
+    width: 3.75rem;
+    height: 3.75rem;
+    object-fit: cover; /*se adapta a diferentes tamanhos de tela*/
+  }
+}
+
+@media (width >= 80em) {
+  fieldset {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    width: 100%;
+  }
+  .content {
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+
+    .banner {
+      width: 40.75rem;
+      height: 45.5rem;
+    }
+    .lorem {
+      width: 29.75rem;
+      height: 35.43rem;
+      font: 400 1.25rem/140% var(--ff-nunito);
+      img {
+        width: 5.6rem;
+        height: 5.6rem;
+      }
     }
   }
+  
+  
 }

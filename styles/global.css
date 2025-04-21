@@ -1,138 +1,120 @@
-* {
+*{
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-}
+  font: inherit;
+  max-width: 100%;
 
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 :root {
-  --font-family:"Nunito", sans-serif;
-  --font-family-flex: "Nunito Sans", sans-serif;
+  --ff-nunito:"Nunito", sans-serif;
+  --ff-NunitoSans: "Nunito Sans", sans-serif;
+  --color-base: black;
   --back-color:rgb(0, 92, 255);
   --gray-color: #DEDEDE;
   --gray-color-2: #4F4F4F;
   --border: #DDD;
-  --title: 300 6.25rem/100% var(--font-family);
-  --title-2: 700 3.75rem/100% var(--font-family-flex) ;
-  --legend: 700 1.5625rem/100% var(--font-family);
-  --h2: 500 2rem/150% var(--font-family-flex);
-  --h3: 700 0.875rem/100% var(--font-family-flex);
-  --h4: 700 1rem/100% var(--font-family-flex);
-  --p: 400 0.755rem/120% var(--font-family-flex);
-  --pp: 400 0.875rem/120% var(--font-family-flex);
-  --small: 400 .75rem/120% var(--font-family-flex);
-  --newlleter: 700 1.25rem/100% var(--font-family-flex);
-  --new: 700 0.625rem/120% var(--font-family-flex);
+  --fs-base: 1rem; /*Paragraph*/
+  --fw-base: 400;
+  --title: 700 2.5rem/100%  var(--ff-nunito);   
+  --title-2: 700 2rem/100% var(--ff-Nunito);
+  --p_title: 700 0.75rem/100% var(--ff-nunito);
+  --legend: 700 1.5625rem/100% var(--ff-nunito);
+  --h2: 500 2rem/150% var(--ff-NunitoSans);
+  --h3: 700 1rem/100% var(--ff-NunitoSans);
+  --h4: 700 1rem/100% var(--ff-NunitoSans);
+  --p: 700 0.875rem/100% var(--ff-NunitoSans);
+  --pp: 400 0.875rem/140% var(--ff-nunito);
+  --small: 400 .75rem/120% var(--ff-NunitoSans);
+  --newlleter: 700 1.25rem/100% var(--ff-NunitoSans);
+  --new: 700 0.625rem/120% var(--ff-NunitoSans);
 
 }
 
-body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  overflow-x: hidden ;
+html {
+  font: var(--ff-NunitoSans);
+  font-weight: var(--fw-base);
+  font-size: var(--fs-base);
 
+  color: var(--color-base);
+  overflow-x: hidden;/*O eixo horizontal não vai ter rolagem*/
+  scroll-behavior: smooth;
+  & button {
+    border: none;
+  }
+}
+body {
   & ul {
     list-style: none;
   }
-
   & a {
     text-decoration: none;
   }
 }
-header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-top: 1rem;
-  margin-bottom: 1.125rem;
-  align-items: center;
-  color: #4F4F4F;
-  & p {
-    display: flex;
-    font-weight: bold;
-    font-family: "Nunito";
-    color: black;
-  }
-
-}
-
 .column {
   display: flex;
   flex-direction: column;
   align-items: center;
   font-family: var(--font-family-flex);
 }
-.flex-1 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: var(--back-color);
-  color: antiquewhite;
-  height: 28px;
-  
-  gap: 1rem;
-  
-  & .violet {
-    background-color: blueviolet;
-  }
-}
 
-aside {
-  display: flex;
-  
-  justify-content: center;
-
-  gap: 6.875rem;
-
-  & .social-midia {
-    display: flex;
-    flex-direction: column;
-  }
-
-  & .social-midia-2{
-    display: flex;
-    justify-content: center;
-    gap: 2.5rem;
-    margin-top: 2.5rem;
-  }
-
-  & ul {
-    color: var(--gray-color-2);
-
-    & h4 {
-      color: black;
-      margin-bottom: 0.6875rem;
-      font: var(--h4);
-    }
-
-    & li {
-      font: var(--small);
-      margin-bottom: 0.5rem;
-    }
-  }
-}
 
 footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-self: center;
+  justify-content: center;
+  text-align: justify;
   width: 67.125rem;
+  color: #303030;
 
   & p {
+    width: 22.375rem;
     margin-bottom: 2.5rem;
-    text-align: center;
+    align-self: center;
+    font-size: 0.75rem;
+    font-weight: 400;
+    font-family: var(--ff-nunito);
+    color: #303030;
   }
 
   & .sponsorship{
     display: flex;
-
-    margin-bottom: 3.9375rem;
-    gap: 3rem;
+    align-items: center;
+    justify-content: center;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 0.9585rem;
+    gap: 2rem;
     
   }
+}
+
+@media (width >= 80em) {
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+   
+  
+    & p {
+      margin-bottom: 2.5rem;
+      width: 67.125rem;
+      
+    }
+  
+    & .sponsorship{
+      display: flex;
+      margin-bottom: 3.9375rem;
+      gap: 3rem;
+      
+    }
+  }
+  
+  
 }
 
 

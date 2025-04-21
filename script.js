@@ -1,33 +1,97 @@
-document.addEventListener('DOMContentLoaded', function() {
-  const searchInput = document.getElementById('serch');
-  const searchButton = searchInput.nextElementSibling; // Assuming the button is the next sibling
-  const header = document.querySelector('header'); // Or any other suitable parent element
+document.addEventListener('DOMContentLoaded', function () {
+  // Desktop
+  const inputDesktop = document.getElementById('search-desktop');
+  const btnDesktop = inputDesktop?.nextElementSibling;
+  const resultDesktop = document.getElementById('search-result-desktop');
+  
 
-  searchButton.addEventListener('click', function() {
-    const searchTerm = searchInput.value.trim();
-    if (searchTerm) {
-      const searchMessage = document.createElement('p');
-      searchMessage.classList.add('search-result-message');
-      searchMessage.textContent = `Você buscou por: '${searchTerm}'`;
-      searchMessage.style.marginTop = '0.8rem'; // Add some spacing
-      searchMessage.style.justifySelf = 'center'
-      header.after(searchMessage); // Insert the message after the header
+  btnDesktop?.addEventListener('click', () => {
+    const term = inputDesktop.value.trim();
+    if (term) {
+      resultDesktop.textContent = `Você buscou por: '${term}'`; 
+      
+      inputDesktop.value = ''; // 👉 limpa o campo de busca
+
+      setTimeout(() => {
+        resultDesktop.textContent = ''; // 👉 apaga o resultado após 7s
+      }, 7000);
+    
+    };
+  });
+  
+
+  // Mobile
+  const inputMobile = document.getElementById('search-mobile');
+  const btnMobile = inputMobile?.nextElementSibling;
+
+  btnMobile?.addEventListener('click', () => {
+    const term = inputMobile.value.trim();
+    if (term) {
+      // Remove se já tiver
+      let existing = document.querySelector('.search-result-message.mobile');
+      if (existing) existing.remove();
+
+      const p = document.createElement('p');
+      p.className = 'search-result-message mobile';
+      p.textContent = `Você buscou por: '${term}'`;
+      p.style.marginTop = '0.5rem';
+      p.style.textAlign = 'center';
+
+      inputMobile.parentElement.insertAdjacentElement('afterend', p);
+
+      // 👉 Limpa o campo de busca
+      inputMobile.value = '';
+
+      // 👉 Remove o resultado depois de 7 segundos
+      setTimeout(() => {
+        p.remove();
+      }, 7000);
     }
   });
 });
 
-const botaoMenu = document.querySelector('.menu-categorias__botao');
-const listaMenu = document.querySelector('.menu-categorias__lista');
 
-botaoMenu.addEventListener('click', () => {
-  listaMenu.style.display = listaMenu.style.display === 'block' ? 'none' : 'block';
+
+const btnMobile = document.getElementById("btn-categorias-mobile");
+const listaMobile = document.getElementById("menu-categorias__lista--mobile");
+console.log(listaMobile); // deve mostrar o <ul>
+btnMobile.addEventListener("click", (e) => {
+  e.stopPropagation();
+  listaMobile.classList.toggle("none");
 });
 
-// Ocultar o menu ao clicar fora dele
-document.addEventListener('click', (event) => {
-  if (!event.target.closest('.menu-categorias')) {
-    listaMenu.style.display = 'none';
+// Esconde o menu se clicar fora
+document.addEventListener("click", () => {
+  listaMobile.classList.add("invisible");
+});
+
+// Desktop (se quiser alternar visibilidade também)
+const btnDesktop = document.getElementById("btn-categorias-desktop");
+const listaDesktop = document.getElementById("lista-categorias-desktop");
+
+btnDesktop.addEventListener("click", (e) => {
+  e.stopPropagation();
+  listaDesktop.style.display = listaDesktop.style.display === "block" ? "none" : "block";
+});
+
+// Fechar quando clicar fora
+document.addEventListener("click", (e) => {
+  // mobile
+  if (!btnMobile.contains(e.target)) {
+    listaMobile.classList.add("invisible");
   }
+  // desktop
+  if (!btnDesktop.contains(e.target) && !listaDesktop.contains(e.target)) {
+    listaDesktop.style.display = "none";
+  }
+});
+
+document.querySelectorAll('.dropdown > a').forEach(link => {
+  link.addEventListener('click', (e) => {
+    e.preventDefault();
+    const submenu = link.nextElementSibling;
+    submenu.classList.toggle('ativo');
+  });
 });
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -85,6 +149,13 @@ document.addEventListener('DOMContentLoaded', function() {
         console.error('Erro:', error);
       });
     }
+  });
+});
+
+document.querySelectorAll('.accordion-header').forEach(header => {
+  header.addEventListener('click', () => {
+    const item = header.parentElement;
+    item.classList.toggle('active');
   });
 });
 

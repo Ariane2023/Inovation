@@ -1,0 +1,185 @@
+aside {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+  
+    gap: 6.875rem;
+  
+    & .social-midia {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    & .social-midia-2{
+      display: flex;
+      justify-content: center;
+      gap: 2.5rem;
+      margin-top: 2.5rem;
+    }
+  
+  }
+  .flex {
+    width: 100%;
+    display: flex;
+  
+   
+  }
+  
+  .social-midia {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    & .image {
+      width: 7.9375rem;
+      height: 1.6575rem;
+    }
+    & .social-midia-2 {
+      & img {
+        width: 1.625rem;
+        height: 1.625rem;
+      }
+    }
+  }
+  
+  .accordion {
+    font-family: sans-serif;
+    border-radius: 6px;
+    overflow: hidden;
+    width: 100%;
+    margin-top: 3rem;
+  
+  }
+  .accordion-item {
+    border-top: 1px solid #dad9d9;
+  }
+  .accordion-header {
+    margin: 0;
+    padding: 16px;
+    background-color: #f9f9f9;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 2rem;
+  }
+  
+  .accordion-content {
+    list-style: none;
+    margin: 0;
+    padding: 0 16px 16px;
+    display: none;
+  }
+  
+  .accordion-content li {
+    margin: 8px 0;
+  }
+  
+  .accordion-item.active .accordion-content {
+    display: block;
+  }
+  
+  .payment-methods {
+    width: 22rem;
+    display: flex;
+    flex-wrap: wrap; /* Faz quebrar linha se faltar espaço */
+    justify-content: center; /* Centraliza horizontalmente */
+    gap: 1.5rem; /* Espaço entre os ícones */
+    
+  }
+  
+  .payment-methods img {
+    width: 2.5rem; /* Tamanho padrão dos ícones */
+    height: auto;
+    object-fit: contain;
+    filter: grayscale(100%); /* Deixa os ícones em preto e branco */
+  }
+  
+  @media (width >= 80em) {
+    aside {
+    
+      & .social-midia {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+       
+      }
+    
+      & .social-midia-2{
+        display: flex;
+        justify-content: center;
+        
+      }
+      .flex {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        margin-top: 4rem;
+        width: 100%;
+        max-width: 72.5rem;
+        
+        gap: 2rem;
+      }
+    
+      .accordion {
+        font-family: sans-serif;
+        border-radius: 6px;
+        display: flex;
+        justify-content: space-between; 
+        gap: 2rem; /* Espaço entre os blocos */
+        align-items: flex-start;
+      
+      }
+      .accordion-content li p {
+        margin: 0;
+        font: var(--small);
+        line-height: 1.4; /* ou ajuste se necessário */
+      }
+   
+      .accordion-item {
+        border-top: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        
+        padding: 0 1rem; /* padding horizontal igual para tudo */
+        & h5 {
+          color: black;      
+          font: var(--h4);
+          margin-bottom: 0.5rem;
+          text-align: left;
+          padding: 0; /* garante que não tenha padding escondido */
+        }
+        span {
+          display: none;
+        }
+      }
+      .accordion-content {
+        color: var(--gray-color-2);
+        list-style: none;
+        margin: 0;
+        padding: 0 16px 16px;
+        display: block;
+        padding: 0; /* remove padding lateral da ul */
+        
+        & li {
+          font: var(--small);
+        }
+      }
+      .payment-methods {
+      width: 35rem;
+      display: flex;
+      flex-direction: row;
+      align-items: center;  
+      justify-content: center; /* Centraliza horizontalmente */
+      gap: 1.5rem; /* Espaço entre os ícones */
+      
+      }
+    }
+  }

@@ -1,126 +1,444 @@
-.avanti {
+header {
+  width: 100%;
   display: flex;
+  flex-direction: column;
+  align-items: center;
+ 
+  margin-bottom: 1.125rem;
+  align-items: center;
+  color: #4F4F4F;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: white; /* ou a cor que você estiver usando */
+
+  & p {
+    display: flex;
+    font-weight: bold;
+    font-family: "Nunito";
+    color: black;
+  }
   
-  margin-top: 1.3rem;
-  margin-bottom: 1.75rem;
-
-
-  & .logo {
-    width: 8rem;
-    margin-left: 2rem;
+}
+.flex-1 {
+  width: 100%;
+  height: 3.25rem;  
+  background-color: var(--back-color);  
+  display: inline-flex;
+  
+  & p {
+    font: 700 0.875rem/120% var(--ff-NunitoSans);
+    color: antiquewhite;
+    padding: 1rem 1rem;
+    display: inline;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    & span {
+      margin-left: 0.2rem;
+      font-weight: 400;
+    }
+    
+   }
+    
   }
 
-  & .input {
-    border-radius: .3rem;
-    width: 37rem;
+  .violet {
+    background-color: blueviolet;
+    color: white;
+    padding: 0 0.3rem;
+    height: 1rem;
+    display: inline-flex;
+    align-items: center;
+    border-radius: 2px;;
+  }
+  
+
+.second {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 1rem;
+  gap: 3rem;
+  
+}
+.first {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1.375rem;
+  position: relative;
+
+  & .display {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+
+    & .center {
+      display: flex; 
+    }
+    & span {
+      background-color: var(--back-color);
+      width: 1.5rem;
+      height: 1.5rem;
+      color: #FFF;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: 1rem;
+      margin-top: -1rem;
+
+      position: absolute;
+      top: 0.8rem;
+      right: -0.5rem;
+      
+      font-family: "Nunito";
+      font-size: 0.75rem;
+      font-style: normal;
+      font-weight: 700;
+
+      border-radius: 50%;
+    }
+    
+  }
+
+
+  & .search {
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 2.5rem;
+    width: 100%;
     height: 2.375rem;
     border: 1px solid var(--border);
-    margin-left: 4.0625rem;    
-    padding-left: 1.5rem;
-    overflow: hidden;
-    display: flex;
-    & input {
-      width: 37rem;
-      border: none;  
-         
-    }
+    border-radius: 0.625rem;
+    margin-top: 1.75rem;
+    margin-bottom: 1rem;
+    
     & button {
-      width: 12rem;
-      height: 2.375rem;
-      border: none;
-      background-color: white;
-      & img {
-        width: 18.698px;
-        height: 18.698px;
-        flex-shrink: 0;
-        overflow: hidden;
-        margin-left: 5rem;
-        
-      }
+      padding: 0.5rem;
+      cursor: pointer;
+      background-color: transparent;
+      margin-left: 1rem;
+    }
+    & input {
+      border:none;
+      padding-left: .7rem;
+      font: var(--p);
+      font-weight: 400;
+      color: black;
     }
   }
-  & .person {
-    gap: 10px;
-    margin-left: 17rem;
-  }  
+
 }
+
 .input input:focus {
   outline: none;
 }
-.center {
-  position: relative;
-
-  .radio-image {
-    background-image: url(../assets/Elipse.svg);
-    width: 1.3125rem;
-    height: 1.3124375rem;
-    color: #FFF;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 0.5rem;
-    margin-top: -1rem;
-    
-    font-family: "Nunito";
-    font-size: 0.75rem;
-    font-style: normal;
-    font-weight: 700;
-  
-    position: absolute;
-    top: .5rem;
-    left: .5rem;
-  }
-
+#search{  
+  height: 1.18rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+  background-color: transparent;
 }
 
-.menu-categorias {
-  position: relative;
+/* Estilo para a mensagem da busca */
+.search-result-message {
+  font-size: 1rem;
+  color: #333;
+  padding: 0.5rem;
+  background-color: #f3f3f3;
+  border-radius: 0.3rem;
+  margin-top: 0.3rem;
+}
+
+input:focus {
+  outline: none;
+}
+
+#btn-categorias-mobile {
   display: flex;
-  justify-content: center;
   align-items: center;
-}
-
-.menu-categorias__botao {
-  background-color: white;  
-  border: none;
-  padding: 10px 20px;
+  gap: 0.5rem;
   cursor: pointer;
-  display: flex; /* Para alinhar o ícone e o texto */
-  align-items: center; /* Alinha verticalmente */
+  color: black;
+  margin-top: 1rem;
+  margin-right: 2rem;
+  position: relative; /* para o menu ficar "ancorado" aqui */
+  & button {
+    background-color: transparent;
+  }
 }
-
-.menu-categorias__botao img {
-  margin-right: 10px; /* Espaço entre o ícone e o texto */
+.none {
+  display: none !important;
 }
-
-.menu-categorias__lista {
+#menu-categorias__lista--mobile {
+  display: block; /* Visível por padrão, será oculto com .invisible */
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+  margin: 0;
   position: absolute;
   top: 100%;
   left: 0;
-  background-color: #fff;
-  border: 1px solid #ccc;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: none;
-  width: 200px; /* Defina a largura desejada */
+  min-width: 200px;
 }
 
-.menu-categorias__lista li {
-  padding: 10px 20px;
-}
-
-.menu-categorias__lista li a {
+#menu-categorias__lista--mobile li a {
   text-decoration: none;
   color: #333;
   display: block; /* Para ocupar a largura total do item */
 }
 
 /* Estilos adicionais para o hover */
-.menu-categorias__lista li a:hover {
+#menu-categorias__lista--mobile li a:hover {
   color: var(--back-color);
 }
 
 .list li a:hover {
   color: var(--back-color);
+}
+
+/* Desktop - a partir de 768px */
+@media (width >= 80em) {
+
+  .flex-1 {
+    width: 100%;
+    height: 1.875rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    word-spacing: 0.2rem;
+    & .violet {
+      margin-bottom: 0.3rem;
+      margin-right: 0.4rem;
+    }
+    & span {
+      margin-left: 0.5rem;
+    }
+  }
+  .display {
+    display: none;
+  }
+
+  header {
+    width: 100%;
+  }
+
+  .second {
+    display: flex;
+    
+    margin-top: 1.3rem;
+    margin-bottom: 1.75rem;
+  
+    & .logo {
+      width: 8rem;
+      margin-right: 2rem;
+    }
+    & input {
+      background-color: white;
+    }
+  }
+  #search-desktop {
+    border-radius: .3rem;
+    width: 24.1rem;
+    height: 1.375rem;
+    border: none;       
+    padding-left: 1.5rem;
+    padding-top: .5rem;
+     
+    background-color: transparent;
+  
+  }
+  .input input:focus {
+    outline: none;
+  }
+ 
+  .desktop-search {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* ou center se quiser centralizado */
+    height: 2.375rem;
+    border: 1px solid var(--border);
+    border-radius: 0.5rem;
+    margin-right: 3rem;
+    background-color: white;
+    & button {
+      width: 12rem;
+      height: 2.375rem;
+      border: none;
+      background-color: transparent;
+    }
+    & img {
+      width: 18.698px;
+      height: 18.698px;
+      flex-shrink: 0;
+      margin-left: 5rem;
+      background-color: transparent;
+    }
+  }
+  .search-result-message {
+    font: 700 1rem/140% var(--ff-nunito);
+    color: #333;
+    padding: 0.5rem;
+    background-color: transparent;
+    border-radius: 0.3rem;
+   
+    text-align: center;
+    margin-top: 0.8rem;
+  
+  }
+  
+  #search-result-desktop {
+    grid-column: 1 / -1;
+    margin-top: 0.5rem;
+  }
+ 
+  .person {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    
+    img {
+      width: 1.5rem;
+      height: 1.5rem;
+    }
+       
+    .adjustments{
+      display: flex;
+      flex-direction: column;
+      font: var(--ff-NunitoSans);
+      font-size: 0.875rem;
+      font-weight: 600;
+      line-height: 0.875rem;
+      background-color: transparent;
+     
+    }
+  }
+
+  .car {
+    position: relative;
+    display: block;
+    object-fit: contain;
+    img {
+      width: 3.5rem !important ;
+      height: auto !important;
+    }
+  }
+
+  
+   .car span {
+    position: absolute;
+    top: -0.6rem;
+    right: -0.4rem;
+    color: antiquewhite;
+
+    background-color: var(--back-color);
+    width: 1.3125rem;
+    height: 1.3rem;
+    font: 700 0.75rem/14px var(--ff-nunito);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+   }
+ 
+  .carrossel-container {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    justify-items: center;
+  }
+  
+  .menu-categorias__botao--desktop {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    color: black;
+    margin-top: 1rem;
+    margin-right: 2rem;
+    position: relative; /* para o menu ficar "ancorado" aqui */
+    & button {
+      background-color: transparent;
+    }
+  }
+ 
+  #lista-categorias-desktop {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+    display: none; /* começa escondido */
+    min-width: 200px;
+    background-color: white;
+    
+  }
+ 
+  
+  .lista-departamentos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    
+  }
+  
+  .lista-departamentos > li {
+    position: relative;
+  }
+  
+  .lista-departamentos a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1rem;
+  }
+  
+  .submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    list-style: none;
+    z-index: 1000;
+  }
+  
+  .submenu li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .dropdown:hover .submenu {
+    display: block;
+  }
+  .submenu {
+    display: none;
+  }
+  .submenu.ativo {
+    display: block;
+  }
+  
 }

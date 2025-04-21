@@ -9,312 +9,434 @@
     <link rel="stylesheet" href="./styles/index.css">
 
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
-</head>
-<body>
-  <div>
-    <div class="flex-1">
-      <legend>Ganhe <span class="violet">R$10,00</span> de desconto no seu primeiro pedido. Utilize um cupom <span>DESCONTO10</span></legend>
-    </div>
-    <header>
-      <div class="avanti">
-        <img class="logo" src="./assets/avanti_svg.svg">
-        <div class="input">
-          <input type="text" id="serch" placeholder="Digite o que você procura" >
-          <button><img src="./assets/Lupa.svg"></button>
+  </head>
+  <body>
+    <div>
+     
+      <header>
+        <div class="flex-1">
+          <p> Ganhe <span class="violet">R$10,00</span>de desconto no seu primeiro pedido. Utilize um cupom<span class="cupom">DESCONTO10</span></p>
         </div>
-        
-            
-        <div class=" person flex">
-          <img src="./assets/person.png" alt="">        
-          <p>Olá, <br>Nome cliente</p>  
-          <div class="center">
-            <div class="radio-image">2</div> 
-            <!--<input type="radio" name="center" value="center" id="center" placeholder="2">Colocar a bolinha com 2pelo css ou js--> 
-            <img src="./assets/center_Car.png" alt=""> 
-          </div>
+        <div class="mobile invisible">
+          <div class="first">
+            <div class="display">
+              <div id="btn-categorias-mobile">
+                <button>
+                  <img src="./assets/Três linhas.svg" alt="Ícone de menu">
+                </button>
+                <ul id="menu-categorias__lista--mobile" class="none">
+                  <li><a href="#">Departamento </a> </li>
+                  <li><a href="#">Departamento </a></li>
+                  <li><a href="#">Departamento </a></li>
+                  <li><a href="#">Departamento </a></li>
+                  <li><a href="#">Departamento </a></li>
+                  <li><a href="#">Departamento </a></li>
+                  <li><a href="#">Departamento </a></li>
+                  <li><a href="#">Departamento </a></li>
+                </ul>
+              </div>
               
-        </div>
-      </div>
-      
-      <div class="menu-categorias">
-        <button class="menu-categorias__botao">
-          <img src="./assets/Três linhas.png" alt="Ícone de menu">
-          <strong>Todas as categorias</strong> 
-        </button>
-        <ul class="menu-categorias__lista">
-          <li><a href="#">Departamento </a> </li>
-          <li><a href="#">Departamento </a></li>
-          <li><a href="#">Departamento </a></li>
-          <li><a href="#">Departamento </a></li>
-          <li><a href="#">Departamento </a></li>
-          <li><a href="#">Departamento </a></li>
-          <li><a href="#">Departamento </a></li>
-          <li><a href="#">Departamento </a></li>
-        </ul>
-        <div>
-          <ul class="list">
-            <li class="dropdow">
-              <a href="#">Departamento</a>
-              <ul class="submenu">
-                <li><a href="#">Categoria</a></li>
-                <li><a href="#">Categoria</a></li>
-                <li><a href="#">Categoria</a></li>
-              </ul>
-            </li>
-  
-            <li class="dropdow">
-              <a href="#">Departamento</a>
-              <ul class="submenu">
-                <li><a href="#">Categoria</a></li>
-                <li><a href="#">Categoria</a></li>
-                <li><a href="#">Categoria</a></li>
-              </ul>
-            </li>
-            <li class="dropdow">
-              <a href="#">Departamento</a>
-              <ul class="submenu">
-                <li><a href="#">Categoria</a></li>
-                <li><a href="#">Categoria</a></li>
-                <li><a href="#">Categoria</a></li>
-              </ul>
-            </li>
-            <li class="dropdow">
-              <a href="#">Departamento</a>
-              <ul class="submenu">
-                <li><a href="#">Categoria</a></li>
-                <li><a href="#">Categoria</a></li>
-                <li><a href="#">Categoria</a></li>
-              </ul>
-            </li>
-            <li class="dropdow">
-              <a href="#">Departamento</a>
-              <ul class="submenu">
-                <li><a href="#">Categoria</a></li>
-                <li><a href="#">Categoria</a></li>
-                <li><a href="#">Categoria</a></li>
-              </ul>
-            </li>
-            <li class="dropdow">
-              <a href="#">Departamento</a>
-              <ul class="submenu">
-                <li><a href="#">Categoria</a></li>
-                <li><a href="#">Categoria</a></li>
-                <li><a href="#">Categoria</a></li>
-              </ul>
-            </li>
-            <li class="dropdow">
-              <a href="#">Departamento</a>
-              <ul class="submenu">
-                <li><a href="#">Categoria</a></li>
-                <li><a href="#">Categoria</a></li>
-                <li><a href="#">Categoria</a></li>
-              </ul>
-            </li>
-            <li class="dropdow">
-              <a href="#">Departamento</a>
-              <ul class="submenu">
-                <li><a href="#">Categoria</a></li>
-                <li><a href="#">Categoria</a></li>
-                <li><a href="#">Categoria</a></li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-        
-      </div>
-    </header> 
+              <img class="logo" src="./assets/avanti_svg.svg">
 
-    <div class="supersale flex">
-      <img src="./assets/Supersale.png">
-      <div class="column">
-        <h1><strong>SUPER</strong>SALE</h1>
-        <p>itens selecionados com até</p>
-        <h2>50%OFF</h2>
-      </div>
-      
-    </div>
+              <div class="center">
+                <img src="./assets/car.svg" alt="Imagem de um carrinho de supermercado"> 
+                <span>2</span> 
+                <!--<input type="radio" name="center" value="center" id="center"  placeholder="2">Colocar a bolinha com 2pelo css ou js--> 
+                
+              </div>
+            </div>
+            
+            <div class="search invisible">
+              <input type="text" id="search-mobile" placeholder="Digite o que você procura" >
+              <button type="button">
+                <img src="./assets/Lupa.svg" alt="imagem de uma lupa">
+              </button>
+              
+            </div>           
 
-    <section>
-      <div>
-        <header class="inside">
-          <h3>lançamentos</h3>
+          </div>
+        </div>
+
+        <div class="desktop desktop_only">
+          <div class="second">
+                            
+            <img class="logo" src="./assets/avanti_svg.svg">
+
+            <div class="desktop-search">
+              <input type="text" id='search-desktop' placeholder="Digite o que você procura" >
+              <button type="button">
+                <img src="./assets/Lupa.svg" alt="imagem de uma lupa">
+              </button>
+            </div>
+            <div class="person">
+              <img src="./assets/person.png" alt=""> 
+              <div class="adjustments">
+                <p>Olá,</p> 
+                <span>Nome cliente!</span>
+              </div> 
+              <div class="car">
+                <img src="./assets/car_.svg" alt="Imagem de um carrinho de supermercado"> 
+                <span>2</span> 
+              </div>
+                                
+            </div>          
+          </div>
+          <div id="search-result-desktop" class="search-result-message"></div>
+        </div>
+
+        <div class="menu-categorias desktop_only">
+          <div class="carrossel-container">
+            <div class="menu-categorias__botao--desktop">
+              <button id="btn-categorias-desktop">
+                <img src="./assets/Três linhas.svg" alt="Ícone de menu">
+                <ul class="lista-categorias" id="lista-categorias-desktop">
+                  <li><a href="#">Departamento &#10095</a> </li>
+                  <li><a href="#">Departamento &#10095</a></li>
+                  <li><a href="#">Departamento &#10095</a></li>
+                  <li><a href="#">Departamento &#10095</a></li>
+                  <li><a href="#">Departamento &#10095</a></li>
+                  <li><a href="#">Departamento &#10095</a></li>
+                  <li><a href="#">Departamento &#10095</a></li>
+                  <li><a href="#">Departamento &#10095</a></li>
+                  <li><a href="#">Departamento &#10095</a></li>
+                </ul>
+              </button> 
+              <strong>Todas as categorias</strong> 
+            </div>
+            
+            <ul class="lista-departamentos" id="carrossel-departamentos">
+              
+              <li class="dropdown">
+                <a href="#">Departamento</a>
+                <ul class="submenu">
+                  <li><a href="#">Categoria</a></li>
+                  <li><a href="#">Categoria</a></li>
+                  <li><a href="#">Categoria</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="#">Departamento</a>
+                <ul class="submenu">
+                  <li><a href="#">Categoria</a></li>
+                  <li><a href="#">Categoria</a></li>
+                  <li><a href="#">Categoria</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="#">Departamento</a>
+                <ul class="submenu">
+                  <li><a href="#">Categoria</a></li>
+                  <li><a href="#">Categoria</a></li>
+                  <li><a href="#">Categoria</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="#">Departamento</a>
+                <ul class="submenu">
+                  <li><a href="#">Categoria</a></li>
+                  <li><a href="#">Categoria</a></li>
+                  <li><a href="#">Categoria</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="#">Departamento</a>
+                <ul class="submenu">
+                  <li><a href="#">Categoria</a></li>
+                  <li><a href="#">Categoria</a></li>
+                  <li><a href="#">Categoria</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="#">Departamento</a>
+                <ul class="submenu">
+                  <li><a href="#">Categoria</a></li>
+                  <li><a href="#">Categoria</a></li>
+                  <li><a href="#">Categoria</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="#">Departamento</a>
+                <ul class="submenu">
+                  <li><a href="#">Categoria</a></li>
+                  <li><a href="#">Categoria</a></li>
+                  <li><a href="#">Categoria</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="#">Departamento</a>
+                <ul class="submenu">
+                  <li><a href="#">Categoria</a></li>
+                  <li><a href="#">Categoria</a></li>
+                  <li><a href="#">Categoria</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </header> 
+
+      <div class="supersale">
+        <img src="./assets/Supersale.png">
+        <div class="column">
+          <div class="flex">
+            <h1><strong>SUPER</strong></h1>
+            <h1 class="down">SALE</h1>
+          </div>
+          <div class="invisible"><p>selected items up to</p></div>
+          <div><p>Itens selecionados com até</p></div>
+                    
+          <h2>50%OFF</h2>
+        </div>
+        <img class="three_up" src="./assets/3_pontinhos.svg">
+      
+      </div>
+
+      <section class="invisible">
+        <div class="inside">
+          <h3>Lançamentos</h3>
           <a href="#" class="">
-            <strong>Ver mais</strong>
+              <strong>Ver mais</strong>
           </a>
-        </header>
-      </div>
-      <div class="releases">
-        <img src="./assets/arrow left.png">
-        <div id="offers">
-          <p>novo</p>
-          <img src="./assets/t-shirt.png">
-          <span>Lorem ipsum dolor sit amet consectetur adipisicing elit</span>
-          <div id="price">
-            <div class="price">
-              <div>
-                <small>R$100,00</small>
-                <h4><strong>R$79,90</strong></h4>
-              </div>
-              <div class="dez">
-                <a href="#" >
-                  <strong>10% OFF</strong>
-                </a> 
-              </div>         
-            </div>
-            <small>Ou até  <strong>10x de R$ 7,90</strong></small>
-            <button>Comprar</button>  
-          </div>   
         </div>
-
-        <div id="offers">
-          <p>NOVO</p>
-          <img src="./assets/t-shirt.png">
-          <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit</span>
-          <div id="price">
-            <div class="price">
-              <div>
-                <small>R$100,00</small>
-                <h4><strong>R$79,90</strong></h4>
-              </div>
-              <div class="dez">
-                <a href="#" >
-                  <strong>10% OFF</strong>
-                </a> 
-              </div>         
-            </div>
-            <small>Ou até  <strong>10x de R$ 7,90</strong></small>
-            <button>Comprar</button> 
-          </div>   
-                
-        </div>
-
-        <div id="offers">
-          <p>NOVO</p>
-          <img src="./assets/t-shirt.png">
-          <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit</span>
-          <div id="price">
-            <div class="price">
-              <div>
-                <small>R$100,00</small>
-                <h4><strong>R$79,90</strong></h4>
-              </div>
-              <div class="dez">
-                <a href="#" >
-                  <strong>10% OFF</strong>
-                </a> 
-              </div>         
-            </div>
-            <small>Ou até  <strong>10x de R$ 7,90</strong></small>
-            <button>Comprar</button> 
-          </div>   
-                
-        </div>
-
-        <div id="offers">
-          <p>NOVO</p>
-          <img src="./assets/t-shirt.png">
-          <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit</span>
-          <div id="price">
-            <div class="price">
-              <div>
-                <small>R$100,00</small>
-                <h4><strong>R$79,90</strong></h4>
-              </div>
-              <div class="dez">
-                <a href="#" >
-                  <strong>10% OFF</strong>
-                </a> 
-              </div>         
-            </div>
-            <small>Ou até  <strong>10x de R$ 7,90</strong></small>
-            <button>Comprar</button> 
-          </div>   
-                
-        </div>
-
-        <div id="offers">
-          <p>NOVO</p>
-          <img src="./assets/t-shirt.png">
-          <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit</span>
-          <div id="price">
-            <div class="price">
-              <div>
-                <small>R$100,00</small>
-                <h4><strong>R$79,90</strong></h4>
-              </div>
-              <div class="dez">
-                <a href="#" >
-                  <strong>10% OFF</strong>
-                </a> 
-              </div>         
-            </div>
-            <small>Ou até  <strong>10x de R$ 7,90</strong></small>
-            <button>Comprar</button> 
-          </div>   
-                
-        </div>
-        <img src="./assets/arrow right.png" alt="imagem de uma seta">   
-      </div>
-    </section>
-    
-    <div class="info">
-      <div class="cup">
-        <img src="./assets/cup.png">
-      </div>
-      <div class="info-2 flex-col">
-        <h2>LOREM IPSUM</h2>
-      <p>Duis consectetur metus nec lacus auctor dignissim. Mauris vitae finibus dui. Mauris laoreet lacus ut eleifend viverra. Cras efficitur volutpat dui, in lobortis metus lacinia sit amet. Sed lacinia pharetra magna, vel pulvinar ligula hendrerit a. Maecenas fringilla porttitor tortor eget lacinia. Donec sollicitudin euismod orci, auctor fringilla magna consequat interdum. Fusce sagittis elit a libero commodo egestas efficitur id augue.<br>
-      <br>
-      Duis consectetur metus nec lacus auctor dignissim. Mauris vitae finibus dui. Mauris laoreet lacus ut eleifend viverra. Cras efficitur volutpat dui, in lobortis metus lacinia sit amet. Sed lacinia pharetra magna, vel pulvinar ligula hendrerit a. Maecenas fringilla porttitor tortor eget lacinia. Donec sollicitudin euismod orci, auctor fringilla magna consequat interdum. Fusce sagittis elit a libero commodo egestas efficitur id augue.                  
-      </p>
-      </div>
       
-    </div>
-    <fieldset>
-      <div class="content">
+        <div class="releases">
+          <img class="desktop_only" src="./assets/arrow left.png">
+
+          <div class="offers">
+            <p>NOVO</p>
+            <img src="./assets/t-shirt.png" alt="imagem de uma pessoa vestindo uma camisa branca">
+            <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit</span>
+            <div id="price">
+              <div class="price">
+                <div>
+                  <small>R$100,00</small>
+                  <h4><strong>R$79,90</strong></h4>
+                </div>
+                <div class="dez">
+                  <a href="#" >
+                    <strong>10% OFF</strong>
+                  </a> 
+                </div>         
+              </div>
+              <small>Ou até  <strong>10x de R$ 7,90</strong></small>
+              <button>Comprar</button> 
+            </div>   
+                
+          </div>
+
+          <div class="offers">
+            <p>NOVO</p>
+            <img src="./assets/t-shirt.png" alt="imagem de uma pessoa vestindo uma camisa branca">
+            <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit</span>
+            <div id="price">
+              <div class="price">
+                <div>
+                  <small>R$100,00</small>
+                  <h4><strong>R$79,90</strong></h4>
+                </div>
+                <div class="dez">
+                  <a href="#" >
+                    <strong>10% OFF</strong>
+                  </a> 
+                </div>         
+              </div>
+              <small>Ou até  <strong>10x de R$ 7,90</strong></small>
+              <button>Comprar</button>
+            </div>   
+            
+                
+          </div>
+          <img class="desktop_only" src="./assets/arrow right.png" alt="imagem de uma seta"> 
+           
+        </div>
+        <div class="three"><img src="./assets/3_pontinhos.svg" alt="Imagem de três pontinhos"> </div>
+        
+      </section>
+
+      <section class="desktop_only">
         <div>
+         <header class="inside">
+            <h3>Lançamentos</h3>
+            <a href="#" class="">
+              <strong>Ver mais</strong>
+            </a>
+          </header>
+        </div>
+        <div class="releases">
+          <img src="./assets/arrow left.png">
+          <div id="offers">
+            <p>NOVO</p>
+            <img src="./assets/t-shirt.png">
+            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit</span>
+            <div id="price">
+              <div class="price">
+                <div>
+                  <small>R$100,00</small>
+                  <h4><strong>R$79,90</strong></h4>
+                </div>
+                <div class="dez">
+                  <a href="#" >
+                    <strong>10% OFF</strong>
+                  </a> 
+                </div>         
+              </div>
+              <small>Ou até  <strong>10x de R$ 7,90</strong></small>
+              <button>Comprar</button>  
+            </div>   
+          </div>
+
+          <div id="offers">
+            <p>NOVO</p>
+            <img src="./assets/t-shirt.png">
+            <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit</span>
+            <div id="price">
+              <div class="price">
+                <div>
+                  <small>R$100,00</small>
+                  <h4><strong>R$79,90</strong></h4>
+                </div>
+                <div class="dez">
+                  <a href="#" >
+                    <strong>10% OFF</strong>
+                  </a> 
+                </div>         
+              </div>
+              <small>Ou até  <strong>10x de R$ 7,90</strong></small>
+              <button>Comprar</button> 
+            </div>   
+                
+          </div>
+
+          <div id="offers">
+            <p>NOVO</p>
+            <img src="./assets/t-shirt.png">
+            <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit</span>
+            <div id="price">
+              <div class="price">
+                <div>
+                  <small>R$100,00</small>
+                  <h4><strong>R$79,90</strong></h4>
+                </div>
+                <div class="dez">
+                  <a href="#" >
+                    <strong>10% OFF</strong>
+                  </a> 
+                </div>         
+              </div>
+              <small>Ou até  <strong>10x de R$ 7,90</strong></small>
+              <button>Comprar</button> 
+            </div>   
+                
+          </div>
+
+          <div id="offers">
+            <p>NOVO</p>
+            <img src="./assets/t-shirt.png">
+            <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit</span>
+            <div id="price">
+              <div class="price">
+                <div>
+                  <small>R$100,00</small>
+                  <h4><strong>R$79,90</strong></h4>
+                </div>
+                <div class="dez">
+                  <a href="#" >
+                    <strong>10% OFF</strong>
+                  </a> 
+                </div>         
+              </div>
+              <small>Ou até  <strong>10x de R$ 7,90</strong></small>
+              <button>Comprar</button> 
+            </div>   
+                
+          </div>
+
+          <div id="offers">
+            <p>NOVO</p>
+            <img src="./assets/t-shirt.png">
+            <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit</span>
+            <div id="price">
+              <div class="price">
+                <div>
+                  <small>R$100,00</small>
+                  <h4><strong>R$79,90</strong></h4>
+                </div>
+                <div class="dez">
+                  <a href="#" >
+                    <strong>10% OFF</strong>
+                  </a> 
+                </div>         
+              </div>
+              <small>Ou até  <strong>10x de R$ 7,90</strong></small>
+              <button>Comprar</button> 
+            </div>   
+                
+          </div>
+          <img src="./assets/arrow right.png" alt="imagem de uma seta">   
+        </div>
+      </section>
+    
+      <div class="info">
+
+        <div class="cup">
+          <img src="./assets/cup.png">
+        </div>
+        <div class="info-2">
+          <h2><strong>loren ipsum</strong></h2>
+          <p>Duis consectetur metus nec lacus auctor dignissim. Mauris vitae finibus dui. Mauris laoreet lacus ut eleifend viverra. Cras efficitur volutpat dui, in lobortis metus lacinia sit amet. Sed lacinia pharetra magna, vel pulvinar ligula hendrerit a. Maecenas fringilla porttitor tortor eget lacinia. Donec sollicitudin euismod orci, auctor fringilla magna consequat interdum. Fusce sagittis elit a libero commodo egestas efficitur id augue.<br>
+          <br>
+          Duis consectetur metus nec lacus auctor dignissim. Mauris vitae finibus dui. Mauris laoreet lacus ut eleifend viverra. Cras efficitur volutpat dui, in lobortis metus lacinia sit amet. Sed lacinia pharetra magna, vel pulvinar ligula hendrerit a. Maecenas fringilla porttitor tortor eget lacinia. Donec sollicitudin euismod orci, auctor fringilla magna consequat interdum. Fusce sagittis elit a libero commodo egestas efficitur id augue.                  
+          </p>
+        </div>
+      
+      </div>
+      <fieldset>
+        <div class="content">
+          <div class="banner"><img class="cup-2"src="./assets/segundo banner.svg">
+          </div>
+          <div class="lorem">
+            <h2>LOREM IPSUM</h2>
+            <ul>
+              <li>
+                <img src="./assets/Circulo e Icone.png">
+                <p>Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,  nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,  pretium quis, sem.</p>
+              </li>
+              <li>
+                <img src="./assets/Circulo e Icone.png">
+                <p>Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,  nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,  pretium quis, sem.</p>
+              </li>
+              <li>
+                <img src="./assets/Circulo e Icone.png">
+                <p>Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,  nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,  pretium quis, sem.</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </fieldset>
+      <div class="info">
+        <div class="cup">
+          <img src="./assets/cup.png">
+        </div>
+        <div class="info-2 flex-col">
           <h2>LOREM IPSUM</h2>
-          <ul>
-            <li>
-              <img src="./assets/Circulo e Icone.png">
-              <p>Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
-            </li>
-            <li>
-              <img src="./assets/Circulo e Icone.png">
-              <p>Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
-            </li>
-            <li>
-              <img src="./assets/Circulo e Icone.png">
-              <p>Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
-            </li>
-          </ul>
-        </div>
-        <img class="cup-2" src="./assets/segundo banner.png">
-      </div>
-    </fieldset>
-    <div class="info">
-      <div class="cup">
-        <img src="./assets/cup.png">
-      </div>
-      <div class="info-2 flex-col">
-        <h2>LOREM IPSUM</h2>
-      <p>Duis consectetur metus nec lacus auctor dignissim. Mauris vitae finibus dui. Mauris laoreet lacus ut eleifend viverra. Cras efficitur volutpat dui, in lobortis metus lacinia sit amet. Sed lacinia pharetra magna, vel pulvinar ligula hendrerit a. Maecenas fringilla porttitor tortor eget lacinia. Donec sollicitudin euismod orci, auctor fringilla magna consequat interdum. Fusce sagittis elit a libero commodo egestas efficitur id augue.<br>
-      <br>
+        <p>Duis consectetur metus nec lacus auctor dignissim. Mauris vitae finibus dui. Mauris laoreet lacus ut eleifend viverra. Cras efficitur volutpat dui, in lobortis metus lacinia sit amet. Sed lacinia pharetra magna, vel pulvinar ligula hendrerit a. Maecenas fringilla porttitor tortor eget lacinia. Donec sollicitudin euismod orci, auctor fringilla magna consequat interdum. Fusce sagittis elit a libero commodo egestas efficitur id augue.<br>
+        <br>
       Duis consectetur metus nec lacus auctor dignissim. Mauris vitae finibus dui. Mauris laoreet lacus ut eleifend viverra. Cras efficitur volutpat dui, in lobortis metus lacinia sit amet. Sed lacinia pharetra magna, vel pulvinar ligula hendrerit a. Maecenas fringilla porttitor tortor eget lacinia. Donec sollicitudin euismod orci, auctor fringilla magna consequat interdum. Fusce sagittis elit a libero commodo egestas efficitur id augue.                  
-      </p>
-      </div>
+        </p>
+        </div>
       
-    </div>
-
-    <section>
-      <div>
-        <header class="inside">
-          <h3>lançamentos</h3>
-          <a href="#" class="">
-            <strong>Ver mais</strong>
-          </a>
-        </header>
       </div>
+
+      <section class="desktop_only">
+        <div>
+         <header class="inside">
+            <h3>Lançamentos</h3>
+            <a href="#" class="">
+              <strong>Ver mais</strong>
+            </a>
+          </header>
+        </div>
       <div class="releases">
         <img src="./assets/arrow left.png">
         <div id="offers">
@@ -427,90 +549,101 @@
         </div>
         <img src="./assets/arrow right.png" alt="imagem de uma seta">   
       </div>
-    </section>
+      </section>
 
-    <div class="banner">
-      <div class="legend">
-        <legend>Entre em contato conosco e verifique a disponibilidade para sua região!</legend>
-      </div>
-      
-    </div>
-
-    <form action="cadastrar_email.php" method="post"> 
-      <h3>Cadastre-se na nossa <span>newsletter</span></h3>
-      <div class="personal-information">
-        <input type="text" name="name" id="name" placeholder="Digite seu nome">
-        <input type="email" name="email" id="email" placeholder="Digite seu e-mail">
-        <div class="agree">
-          <input type="radio" name="agreement" id="agreement" required>
-          <p>Estou de acordo com a <a href="#">Política de Privacidade</a></p>
+      <div id="banner">
+        <div class="legend">
+          <p>Entre em contato conosco e verifique a disponibilidade para sua região!</p>
         </div>
-        <input type="hidden" name="action" value="cadastrar">
-        <button type="submit">Cadastrar</button> 
-      </div>   
-    </form>
+      </div>
+
+      <form action="cadastrar_email.php" method="post"> 
+        <h3>Cadastre-se na nossa <span>newsletter</span></h3>
+        <div class="personal-information">
+          <input class="input" type="text" name="name" id="name" placeholder="Digite seu nome">
+          <input class="input" type="email" name="email" id="email" placeholder="Digite seu e-mail">
+          <div class="agree">
+            <input type="radio" name="agreement" id="agreement" required>
+            <p>Estou de acordo com a <p></p><a href="#">Política de Privacidade</a></p>
+          </div>
+          <input type="hidden" name="action" value="cadastrar">
+          <button type="submit">Cadastrar</button> 
+        </div>   
+      </form>
     
-    <aside>
-      <div class="social-midia">
-        <img src="./assets/avanti_svg.svg">
-        <div class="social-midia-2">
-          <img src="./assets/instagram.png" alt="logo do intagram">
-          <img src="./assets/facebook.png" alt="logo do facebook">
-          <img src="./assets/youtube.png" alt="logo do youtube">
-          <img src="./assets/tiktok.png" alt="logo do tiktok ">
+      <aside>
+        <div class="flex">
+          <div class="social-midia">
+            <img class="image" src="./assets/avanti_svg.svg">
+            <div class="social-midia-2">
+              <img src="./assets/instagram.svg" alt="logo do intagram">
+              <img src="./assets/facebook.svg" alt="logo do facebook">
+              <img src="./assets/youtube.svg" alt="logo do youtube">
+              <img src="./assets/tiktok.svg" alt="logo do tiktok ">
+            </div>
+          </div>
+          <section class="accordion">
+            <div class="accordion-item">
+              <h5 class="accordion-header">Institucional <span class="arrow"><img src="./assets/iconmonstr-arrow-25.svg"></span></h5>
+              <ul class="accordion-content">
+                <li>Sobre nós</li>
+                <li>Nossas lojas</li>
+                <li>Privacidade e Segurança</li>
+                <li>Termos e condições</li>
+              </ul>
+            </div>
+          
+            <div class="accordion-item">
+              <h5 class="accordion-header">Central de ajuda <span class="arrow"><img src="./assets/iconmonstr-arrow-25.svg"></span></h5>
+              <ul class="accordion-content">
+                <li>Fale conosco</li>
+                <li>Frete e Entrega</li>
+                <li>Trocas e Devoluções</li>
+                <li>Formas de Pagamento</li>
+                <li>FAQ</li>
+              </ul>
+            </div>
+          
+            <div class="accordion-item">
+              <h5 class="accordion-header">Atendimento <span class="arrow"><img src="./assets/iconmonstr-arrow-25.svg"></span></h5>
+              <ul class="accordion-content">
+                <li><strong>Telefone:</strong> (00) 1234-5678</li>
+                <li><strong>E-mail:</strong> exemplo@exemplo.com.br</li>
+                <li><strong>Horário de atendimento:</strong></li>
+                <li>Segunda a Sábado 07h00 às 23h00</li>
+                <li>Domingos e Feriados 07h00 às 21h00</li>
+              </ul>
+            </div>
+          </section>
         </div>
-      </div>
-      <ul>
-        <h4>Institucional</h4>
-        <li><H5>Sobre nós</H5></li>
-        <li><H5>Nossas lojas</H5></li>
-        <li><H5>Privacidade e Segurança</H5></li>
-        <li><H5>Termos e condições</H5></li>
-      </ul>
-
-      <ul>
-        <h4>Central de ajuda</h4>
-        <li><H5>Fale conosco</H5></li>
-        <li><H5>Frete e Entrega</H5></li>
-        <li><H5>Trocas e |Devoluções</H5></li>
-        <li><H5>Trocas e devoluções</H5></li>
-        <li><H5>Formas de Pagamento</H5></li>
-        <li><H5>FAQ</H5></li>
-      </ul>
-
-      <ul>
-        <h4>Atendimento</h4>
-        <li><H5><strong>Telefone:</strong>(00) 1234-5678</H5></li>
-        <li><H5><strong>E-mail:</strong> exemplo@exemplo.com.br</H5></li>
-        <li><H5><strong>Horário de atendimento:</strong>><br>
-        Segunda a Sábado 07h00 às 23h00<br>
-        Domingos e Feriados 07h00 às 21h00 </H5></li>
         
-      </ul>
+        
+        <section class="payment-methods">
+          <img src="./assets/amex.svg" alt="logo da AMEX">
+          <img src="./assets/mastercard.svg" alt="logo mastercard">
+          <img src="./assets/visa.svg" alt="logo visa">
+          <img src="./assets/hipercard.svg" alt="logo hipercard">
+          <img src="./assets/elo.svg" alt="logo elo">
+          <img src="./assets/american.svg" alt="logo americam express">
+          <img src="./assets/paypal.svg" alt="logo paypal">
+          <img src="./assets/pix.svg" alt=" logo pix">
+          <img src="./assets/boleto.svg" alt=" logo boleto">
+        </section>
       
-    </aside>
-    <section class="payment-methods">
-      <img src="./assets/amex.svg" alt="logo da AMEX">
-      <img src="./assets/mastercard.svg" alt="logo mastercard">
-      <img src="./assets/visa.svg" alt="logo visa">
-      <img src="./assets/hipercard.svg" alt="logo hipercard">
-      <img src="./assets/elo.svg" alt="logo elo">
-      <img src="./assets/american.svg" alt="logo americam express">
-      <img src="./assets/paypal.svg" alt="logo paypal">
-      <img src="./assets/pix.svg" alt=" logo pix">
-      <img src="./assets/boleto.svg" alt=" logo boleto">
-    </section>
+      </aside>
+      
 
-    <footer>
-      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
-      <div class="sponsorship">
-        <img src="./assets/f-encrypt.svg" alt="logo da encrypt">
-        <img src="./assets/vtex-pci-200.svg" alt="logo de certificação da vtex">
-        <img src="./assets/avanti-2.svg" alt="logo avanti">
-        <img src="./assets/vtex.svg" alt="logo VTEX">
-      </div>
-    </footer>
-  </div>
-  <script src="./script.js"></script>
-</body>
+      <footer>
+        <p class="invisible">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci. </p>
+        <p class="desktop_only">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+        <div class="sponsorship">
+          <img src="./assets/f-encrypt.svg" alt="logo da encrypt">
+          <img src="./assets/vtex-pci-200.svg" alt="logo de certificação da vtex">
+          <img src="./assets/avanti-2.svg" alt="logo avanti">
+          <img src="./assets/vtex.svg" alt="logo VTEX">
+        </div>
+      </footer>
+    </div>
+    <script src="./script.js"></script>
+  </body>
 </html>

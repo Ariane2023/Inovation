@@ -1,138 +1,259 @@
-.m-top {
-  display: flex;
-  flex-direction: row;
-  justify-self: center;
-  margin-top: 1rem;
-  margin-bottom: 1.125rem;
-  gap: 2.8125rem;
-  font: var(--pp);
-  color: black;  
-}
-.list {
-  display: flex;
-  align-items: center;
-  gap: 2.8125rem;
-  list-style: none;
-  & a {
-    color: #000;
-    & a:hover .submenu{
-      display: block;
-      color: var(--back-color);
-    }
-  }
-}
-/* Estilizando os itens do menu */
-.dropdown {
+.supersale{
   position: relative;
-
-}
-
-/* Estilizando o submenu */
-.submenu {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  background: white;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 10px;
-  list-style: none;
-  min-width: 150px;
-  z-index: 10;
-}
-.submenu li {
-  padding: 5px 0;
-}
-
-/* Mostrar o submenu ao passar o mouse */
-.dropdown:hover .submenu {
-  display: block;
-  color: var(--back-color);
-}
-
-.supersale {
-  background-color: rgb(230, 227, 227);
-  color: var(--back-color);
-  text-transform: uppercase;
-  gap: 12px;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--gray-color);
+  padding-right: 2rem;
+  z-index: 100;
+  margin-top: 11rem; /* ajuste conforme a altura real do seu header */
+  & .three_up {
+    position: absolute;
+    top: 95%;  
+   right: 10rem;
+  }
+  
+}
+.supersale img {
+  position: relative;
+  right: 7rem;
+  object-fit: cover;
+  
+}
+/*Preciso adaptar esse item a tela*/
+.column {
+  position: absolute;
+  right: 2rem; /* empurra um pouco pra cima da imagem */
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-
-  & h1 {
-    color: black;
-    font:var(--title) 
+  top: 20%;
+  text-transform: uppercase;
+  
+  & h2, p {
+    color: var(--back-color);
   }
   & h2 {
-    letter-spacing: 2px;
     font: var(--title-2);
-  }
+    font-size: 2rem;
+    font-family: var(--ff-nunito);
+    font-weight: 700;
+  } 
   & p {
-    letter-spacing: .4rem;
-    font: var(--legend);
-    height: 34px;
+    font: var(--p_title);
+    width: 139px;
+    display: inline;
+    margin-top: 0.75rem;
+    margin-bottom: 0.75rem;
+    letter-spacing: 0;
+  }
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #000000;
+  & h1 {
+    font: var(--title);
+  }
+  & .down {
+    font-weight: 300;
   }
 }
 
 .info {
-  display: grid;
-  width: 70rem;
-  height: 46.6875rem;
-  
-  grid-template-columns: 60% 40%;
-  justify-content: center; /* Centraliza horizontalmente */
-  align-items: center;
-  font: var(--p);
-  font-size: 1.1rem;
-  text-align: justify;
-  color: rgb(59, 59, 59);
-  margin-top: 6rem;
-  margin-left: 2rem;
-  gap: 2.34375rem ;
-  justify-self: center;
- 
-  margin-bottom: 1rem;
-  & .cup {
-    width: 40.75rem;
-    height: 46.6875rem;
-    background: #C2C2C2;
-    display: flex; /* Adicionado para usar Flexbox */
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center; /* Centraliza verticalmente */
-  }
+  font-family: var(--ff-nunito);
+  color: #000000;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  margin-top: 3.5rem;
 
   & h2 {
-    font: var(--h2);
-    margin-bottom: 1rem;
-    color: black;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-top: 2.75rem;
+    letter-spacing: 4%;
   }
 
-  & img {
-    width: 32.71125rem;
-    height: 33.010625rem;
+  & p {
+    margin-top: 1.125rem;
+    margin-bottom: 3rem;
+    font: var(--pp);
+
   }
 }
 
-.banner {
+.cup {
   width: 100%;
-  height: 41.25rem;
-  background-image: url(../assets/image.png);
-  margin-top: 4rem;
-  margin-bottom: 4rem;
-  color: #ffffff;
+  height: 22.5rem;
+  background-color: #b6b3b3;
   display: flex;
   align-items: center;
+  justify-content: center;
   
+  margin-top: 2.rem;
+  & img {
+    width: 22.4rem;
+    height: auto;
+    object-fit: cover; /*se adapta a diferentes tamanhos de tela*/
+  }
+}
 
-  & .legend {
-    font-family: "Nunito", sans-serif;
+#banner {
+  width: 100%;
+  height: 28.1rem;
+  background-image: url(../assets/banner_2.svg);
+  background-repeat: no-repeat;
+  background-size: cover; /*se adapta a tela*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  align-items: center;  
+  
+  & p {
+    color: white;
+    font-family: var(--ff-nunito);
     background-color: var(--back-color);
     width: 100%;
+    height: 4.6rem;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 1rem;  
+    font-weight: 400;
+  }
+}
+@media (width >= 80em) {
+  .supersale {
+    background-color: rgb(230, 227, 227);
+    color: var(--back-color);
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    width: 100%;
+
+    & img {
+      margin-right: 20rem;
+    }
+
+    & .flex {
+      display: flex;
+      flex-direction: row;
+    }
+
+    & .column {
+      margin-right: 20rem;
+    }
+  
+    & h1 {
+      color: black;
+      font-size: 6.25rem; 
+      
+    }
+    & h2 {
+      letter-spacing: 2px;
+      font-size: 3.75rem;
+    }
+    & p {
+      letter-spacing: .4rem;
+      font: var(--legend);
+      height: 34px;
+    }
+    & .three_up {
+      display: none;
+    }
+  }
+
+  .info {
+    width: 70rem;
+    height: 46.6875rem;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center;
+    justify-self: center;
+    text-align:left ;
+    font: 400 1.125rem/140% var(--ff-nunito);
+    color: #000000;
+    margin-top: 6rem;
+    gap: 2.34375rem ;
+    margin-bottom: 1rem;
+    
+    & .cup {
+      width: 40.75rem;
+      height: 46.6875rem;
+      background: #C2C2C2;
+      display: flex; /* Adicionado para usar Flexbox */
+      justify-content: center; /* Centraliza horizontalmente */
+      align-items: center; /* Centraliza verticalmente */
+    }
+  
+    & img {
+      width: 32.71125rem;
+      height: 33.010625rem;
+    }
+  }
+  .info-2 {
+    width: 30.43rem;
+    height: 33.5rem;
+    display: flex;
+    flex-direction: column;
+    margin-top: 6.5rem;
+    margin-bottom: 6.5rem;    
+    
+    & h2 {
+      font: 700 1.875rem/140% var(--ff-nunito);
+      color: black;
+      text-transform: uppercase;
+      margin-top: 0;
+      margin-bottom: 1rem;
+    }
+
+    & p {
+      font: 400 1.125rem/140% var(--ff-nunito);
+      display: flex;
+      text-align: left;
+
+    }
+   
+  }
+
+  #banner {
+    width: 100%;
+    height: 41.25rem;
+    background-image: url(../assets/image.png);
+    object-fit: cover;
+    zoom: 87%;
+  
+    margin-top: 4rem;
+    & p {
+      font-size: 1.875rem;
+    }
+   
+  }
+  .legend {
+    width: 100%;
     height: 8.25rem;
+    background-color: var(--back-color);
+    color: white;
+    
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.875rem;
-    
+    text-align: center;
+   
   }
+
+  p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
 }

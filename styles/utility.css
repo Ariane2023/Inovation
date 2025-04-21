@@ -1,16 +1,18 @@
-.flex {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.grid {
-  display: grid;
+.desktop_only{
+  display: none;
 }
 
-.rgb {
-  background-color: var(--back-color);
+.invisible { 
+  display: initial;
 }
 
-.flex-col{
-  flex-direction: column;
+
+@media (width >= 80em) {
+  .desktop_only{
+    display: initial;
+  }
+  .invisible { 
+    display: none;
+  }
+ 
 }
